@@ -1,0 +1,136 @@
+:root{
+  --juoda:#4F4F4F;
+  --balta:#F5F5F5;
+  --zalia:rgb(79, 160, 79);
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  color: var(--juoda);
+  
+}
+
+.container{
+  width: 600px;
+  margin: auto;
+  box-shadow: -4px 9px 19px -4px rgba(145,145,145,1);
+  padding: 25px 40px;
+  width: 600px;
+  background: #CFCFCF;
+  mix-blend-mode: normal;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+h2{
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-size: 36px;
+}
+
+ul{
+  list-style-type: none;
+  display: grid;
+  padding: 0;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+.list-item{
+  height: 49px;
+  font-size: 24px;
+  background-color:var(--balta);
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+span{
+  margin: 0px 20px 0px auto;
+  color: rgb(211, 37, 37);
+}
+
+div.input-wraper{
+  position: relative;
+}
+#task-input{
+  border-radius: 0;
+  border: none;
+  height: 49px;
+  width: 100%;
+  font-size: 24px;
+  color: var(--juoda);
+  padding: 0 0 0 10px;
+  box-sizing: border-box;
+}
+#task-input:focus{
+  box-shadow: 0px 0px 3px 2px rgb(73, 176, 255);
+}
+
+#input-lebel{
+  font-size: 24px;
+  margin-left: 10px;
+  position: absolute;
+  left:0px;
+  top:10px;
+  transition-property: all;
+  transition-duration: 0.3s;
+}
+
+#task-input:focus + label{
+  top: -30px;
+  left: -10px;
+  opacity: 0.7;
+  transform: scale(0.8);
+}
+/* /filter section  */
+.filter-section{
+  position: relative;
+  margin-top:20px;
+}
+#task-filter{
+  border-radius: 0;
+  border: none;
+  height: 49px;
+  width: 100%;
+  font-size: 24px;
+  color: var(--juoda);
+  padding: 0 0 0 10px;
+  box-sizing: border-box;
+  
+}
+#task-filter:focus{
+  box-shadow: 0px 0px 3px 2px rgb(73, 176, 255);
+}
+
+#filter-lebel{
+  font-size: 24px;
+  margin-left: 10px;
+  position: absolute;
+  left:0px;
+  top:10px;
+  transition-property: all;
+  transition-duration: 0.3s;
+}
+
+#task-filter:focus + label{
+  top: -30px;
+  left: -10px;
+  opacity: 0.7;
+  transform: scale(0.8);
+}
+/* /////// */
+
+#task-enter{
+  height: 45px;
+  width: 114px;
+  border:none;
+  margin: 22px 0 24px 0;
+  background-color: var(--zalia);
+  color: var(--balta);
+  font-size: 18px;
+  font-weight: medium;
+}
+#task-enter:hover{
+  background-color: rgb(70, 139, 70);
+  box-shadow: -2px 5px 10px -2px rgba(145,145,145,1);
+}
+
