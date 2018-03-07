@@ -1,3 +1,3 @@
 #Taks List
-learning task List app with create, detalte and store in local storage functionality.
+learning task List app with create, deleate and store in local storage functionality.
 without frameforks. 
