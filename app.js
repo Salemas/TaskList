@@ -2,7 +2,7 @@ const taskInput = document.querySelector('#task-input');
 const form = document.querySelector('#input-form');
 const taskList = document.querySelector('.tasks-list');
 const clear = document.querySelector('.clear-tasks');
-const filter = document.querySelector('#task-filter');
+const filter = document.querySelector('#filter-input');
 
 // loading events
 eventLoader();
@@ -154,6 +154,7 @@ function filterTask(e){
 
   document.querySelectorAll('.list-item').forEach(function(task){
     const item = task.firstChild.textContent;
+    console.log(item);
     
     if (item.toLowerCase().indexOf(text) != -1){
       task.style.display = 'flex';

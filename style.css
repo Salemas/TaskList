@@ -105,6 +105,7 @@ div.input-wraper{
   font-size: 24px;
   color: var(--juoda);
   padding: 0 0 0 10px;
+  box-sizing: border-box;
 }
 
 #filter-input:focus{
