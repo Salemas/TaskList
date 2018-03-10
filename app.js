@@ -7,6 +7,7 @@ const filter = document.querySelector('#filter-input');
 // loading events
 eventLoader();
 
+
 function eventLoader(){
   //cheking DOM load and loading task from local storage
   document.addEventListener('DOMContentLoaded', tasksLoad);
